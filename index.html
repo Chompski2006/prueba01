@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selva Peruana en Peligro de Extinción</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #e9f5e9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d1d1d1;
+        }
+        .cuadro {
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+        .cuadro:hover {
+            transform: scale(1.02);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ccc;
+            transition: background 0.3s;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover td {
+            background-color: #f1f1f1;
+        }
+        img {
+            max-width: 80px;
+            height: auto;
+            border-radius: 4px;
+        }
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Selva Peruana en Peligro de Extinción</h1>
+    <nav>
+        <a href="#animales">Animales</a>
+        <a href="#plantas">Plantas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<div class="search-container">
+    <input type="text" id="search" placeholder="Buscar...">
+</div>
+
+<div class="cuadro" id="animales">
+    <h2>Animales en Peligro de Extinción</h2>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Imagen</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Jaguar</td>
+            <td>Animal</td>
+            <td><img src="jaguar.jfif" alt="Jaguar"></td>
+            <td>El jaguar es el mayor felino de América y es vital para el ecosistema, controlando las poblaciones de otras especies.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Oso Andino</td>
+            <td>Animal</td>
+            <td><img src="oso andino.jfif" alt="Oso Andino"></td>
+            <td>El oso andino es el único oso nativo de Sudamérica. Su principal amenaza es la pérdida de hábitat.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Tapir</td>
+            <td>Animal</td>
+            <td><img src="tapir.png" alt="Tapir"></td>
+            <td>El tapir es un herbívoro de gran tamaño que juega un papel crucial en la dispersión de semillas.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Nutria Gigante</td>
+            <td>Animal</td>
+            <td><img src="Nutria Gigante.png" alt="Nutria Gigante"></td>
+            <td>La nutria gigante es un mamífero acuático que se encuentra en ríos y lagos.</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Manatí</td>
+            <td>Animal</td>
+            <td><img src="Manatí.jfif" alt="Manatí"></td>
+            <td>El manatí es un mamífero acuático herbívoro que habita en ríos y estuarios.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Guacamayo Rojo</td>
+            <td>Animal</td>
+            <td><img src="guacamayo rojo.png" alt="Guacamayo Rojo"></td>
+            <td>El guacamayo rojo es conocido por su plumaje vibrante.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Ballena Franca</td>
+            <td>Animal</td>
+            <td><img src="ballena franca.png" alt="Ballena Franca"></td>
+            <td>La ballena franca es una especie de ballena que se encuentra en aguas costeras.</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Perezoso</td>
+            <td>Animal</td>
+            <td><img src="perezoso.png" alt="Perezoso"></td>
+            <td>El perezoso es un mamífero arbóreo que se mueve lentamente.</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Rana de cristal</td>
+            <td>Animal</td>
+            <td><img src="rana de cristal.png" alt="Rana de cristal"></td>
+            <td>La rana de cristal es conocida por su piel transparente.</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Mono Titi</td>
+            <td>Animal</td>
+            <td><img src="mono titi.png" alt="Mono Titi"></td>
+            <td>El mono titi es un primate pequeño y sociable.</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Rana de lluvia</td>
+            <td>Animal</td>
+            <td><img src="rana de la lluvia.jpg" alt="Rana de lluvia"></td>
+            <td>La rana de lluvia es una especie que habita en zonas húmedas.</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Águila Arpia</td>
+            <td>Animal</td>
+            <td><img src="aguila arpia.jfif" alt="Águila Arpia"></td>
+            <td>El águila arpia es una de las aves rapaces más grandes del mundo.</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Mariposa Morfo</td>
+            <td>Animal</td>
+            <td><img src="mariposa morfo.png" alt="Mariposa Morfo"></td>
+            <td>La mariposa morfo es conocida por su vibrante color azul.</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Rana de flecha</td>
+            <td>Animal</td>
+            <td><img src="rana de flecha.png" alt="Rana de flecha"></td>
+            <td>La rana de flecha es famosa por sus venenosas secreciones.</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Puma</td>
+            <td>Animal</td>
+            <td><img src="puma.png" alt="Puma"></td>
+            <td>El puma es un gran felino que habita en diversas regiones.</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Serpiente de Cascabel</td>
+            <td>Animal</td>
+            <td><img src="Serpiente de Cascabel.jfif" alt="Serpiente de Cascabel"></td>
+            <td>La serpiente de cascabel es conocida por su veneno y su característico sonido.</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Perro de Agua</td>
+            <td>Animal</td>
+            <td><img src="Perro de Agua.jfif" alt="Perro de Agua"></td>
+            <td>El perro de agua es un mamífero acuático que se encuentra en ríos y lagos.</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Tortuga de río</td>
+            <td>Animal</td>
+            <td><img src="tortuga de rio.jfif" alt="Tortuga de río"></td>
+            <td>La tortuga de río es una especie en peligro debido a la pérdida de hábitat.</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Vicuña</td>
+            <td>Animal</td>
+            <td><img src="vicuña.png" alt="Vicuña"></td>
+            <td>La vicuña es un animal de los Andes conocido por su lana suave.</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Colibrí</td>
+            <td>Animal</td>
+            <td><img src="colibri.png" alt="Colibrí"></td>
+            <td>El colibrí es un pequeño ave que se alimenta de néctar.</td>
+        </tr>
+    </table>
+</div>
+
+<div class="cuadro" id="plantas">
+    <h2>Plantas en Peligro de Extinción</h2>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Imagen</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Caoba</td>
+            <td>Planta</td>
+            <td><img src="caoba.png" alt="Caoba"></td>
+            <td>La caoba es un árbol famoso por su madera de alta calidad y durabilidad.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Palma de Puyas</td>
+            <td>Planta</td>
+            <td><img src="Palma de Puyas.png" alt="Palma de Puyas"></td>
+            <td>Esta palma es famosa por su gran tamaño y su capacidad de crecer en suelos empobrecidos.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Rubber Tree</td>
+            <td>Planta</td>
+            <td><img src="rubber tree.jfif" alt="Rubber Tree"></td>
+            <td>El árbol de caucho es conocido por su látex, utilizado para producir goma.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Castaña</td>
+            <td>Planta</td>
+            <td><img src="castaña.jfif" alt="Castaña"></td>
+            <td>La castaña es una semilla comestible y muy nutritiva.</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Shiringa</td>
+            <td>Planta</td>
+            <td><img src="shiringa.jpg" alt="Shiringa"></td>
+            <td>La shiringa es un árbol del que se extrae el látex para hacer goma.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Ayahuasca</td>
+            <td>Planta</td>
+            <td><img src="ayahuasca.png" alt="Ayahuasca"></td>
+            <td>La ayahuasca es una planta sagrada utilizada en rituales chamánicos.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Coca</td>
+            <td>Planta</td>
+            <td><img src="coca.jfif" alt="Coca"></td>
+            <td>La coca es una planta cuyas hojas se utilizan para hacer té.</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Palma de Aceite</td>
+            <td>Planta</td>
+            <td><img src="palma de aceite.png" alt="Palma de Aceite"></td>
+            <td>La palma de aceite se cultiva para la producción de aceite.</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Bambú</td>
+            <td>Planta</td>
+            <td><img src="bambu.png" alt="Bambú"></td>
+            <td>El bambú es una planta de rápido crecimiento utilizada en construcción.</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Orquídea</td>
+            <td>Planta</td>
+            <td><img src="Orquídea.png" alt="Orquídea"></td>
+            <td>Las orquídeas son flores valoradas por su belleza y diversidad.</td>
+        </tr>
+    </table>
+</div>
+
+<div class="cuadro" id="contacto">
+    <h2>Contacto</h2>
+    <p>Si deseas más información, no dudes en contactarnos:</p>
+    <a href="mailto:info@selvaperuana.com" class="btn">Enviar un Correo</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 Selva Peruana. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Filtrado de búsqueda
+    document.getElementById('search').addEventListener('input', function() {
+        let filter = this.value.toLowerCase();
+        let tables = document.querySelectorAll('table');
+
+        tables.forEach(table => {
+            let rows = table.querySelectorAll('tr');
+            rows.forEach(row => {
+                if (row.textContent.toLowerCase().includes(filter)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
